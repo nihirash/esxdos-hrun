@@ -156,6 +156,9 @@ _plugin_hob_sp:
 	ld sp, 00000			; restore the old stack
 
 	ld a, PLUGIN_OK|PLUGIN_RESTORE_SCREEN|PLUGIN_RESTORE_BUFFERS
+
+;; №7FFD, #10	?  test ram AUMT crash font displayed*
+
 	ret
 
 _plugin_hob_screen_player_end:
